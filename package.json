@@ -1,0 +1,22 @@
+{
+  "name": "medialive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-mediaconvert": "^3.290.0",
+    "@aws-sdk/client-medialive": "^3.290.0",
+    "@aws-sdk/client-mediapackage": "^3.290.0",
+    "@aws-sdk/client-s3": "^3.290.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "typescript": "^5.1.0-dev.20230316"
+  }
+}
