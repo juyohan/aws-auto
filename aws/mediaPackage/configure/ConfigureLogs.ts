@@ -2,11 +2,11 @@ import { ConfigureLogsCommand, ConfigureLogsRequest } from '@aws-sdk/client-medi
 import { AWS_MEDIAPACKAGE_CLIENT } from '../../common/awsConfig';
 
 
-export const configureLogs = async() => {
+export const configureLogs = async(id: string) => {
     const clinet = AWS_MEDIAPACKAGE_CLIENT
 
     const input : ConfigureLogsRequest = {
-        Id : "sdk-test-mediapackage",
+        Id : id,
         EgressAccessLogs : {
             LogGroupName : "/aws/MediaPackage/EgressAccessLogs"
         },
@@ -25,4 +25,4 @@ export const configureLogs = async() => {
     }
 }
 
-configureLogs()
+configureLogs('10066')

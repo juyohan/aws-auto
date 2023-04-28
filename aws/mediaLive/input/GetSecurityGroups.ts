@@ -1,9 +1,8 @@
-import { MediaLiveClient, ListInputSecurityGroupsCommand, ListInputSecurityGroupsRequest } from "@aws-sdk/client-medialive";
+import { ListInputSecurityGroupsCommand, ListInputSecurityGroupsRequest } from "@aws-sdk/client-medialive";
+import { AWS_MEDIALIVE_CLIENT } from "../../common/awsConfig";
 
 export const getSecurityGroups = async() => {
-    const client = new MediaLiveClient({
-        region : "ap-northeast-2"
-    })
+    const client = AWS_MEDIALIVE_CLIENT
 
     const input : ListInputSecurityGroupsRequest= {}
 
